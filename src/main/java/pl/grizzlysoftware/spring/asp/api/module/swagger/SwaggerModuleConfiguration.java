@@ -11,4 +11,5 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @Profile("swagger-module")
 public class SwaggerModuleConfiguration {
+
 }

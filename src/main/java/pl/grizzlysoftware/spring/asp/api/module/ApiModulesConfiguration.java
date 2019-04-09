@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Import;
 import pl.grizzlysoftware.spring.asp.api.module.customer.CustomerModuleConfiguration;
 import pl.grizzlysoftware.spring.asp.api.module.security.SecurityModuleConfiguration;
 import pl.grizzlysoftware.spring.asp.api.module.subscription.SubscriptionModuleConfiguration;
+import pl.grizzlysoftware.spring.asp.api.module.swagger.SwaggerModuleConfiguration;
 
 /**
  * Created by Bartosz Pawłowski, bpawlowski@grizzlysoftware.pl
@@ -15,7 +16,8 @@ import pl.grizzlysoftware.spring.asp.api.module.subscription.SubscriptionModuleC
 @Import({
         SecurityModuleConfiguration.class,
         CustomerModuleConfiguration.class,
-        SubscriptionModuleConfiguration.class
+        SubscriptionModuleConfiguration.class,
+        SwaggerModuleConfiguration.class
 })
 @Configuration
 public class ApiModulesConfiguration {
